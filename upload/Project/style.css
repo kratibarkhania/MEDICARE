@@ -1,0 +1,46 @@
+body{
+    background-image: url(https://media.istockphoto.com/photos/texture-of-blue-paper-picture-id945663596?k=20&m=945663596&s=612x612&w=0&h=f6Zhyxp4rZAYn98qoPYnglSai6BefKLSKtgO576wQFo=);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main{
+    position: absolute;
+    top: 17%;
+    left:30%;
+    width:460px;
+    border: 2px solid black;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.295);
+    color: white;
+    border-radius: 12px;
+    padding-top: 80px;
+}
+#file::-webkit-file-upload-button{
+    visibility: hidden;
+}
+#file , input[type=button], #Color{
+    width: 90%;
+    height: 70px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 17px;
+    border: 1px solid black;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    background-color:rgba(0, 0, 0, 0.295);
+    color: #fff;
+    transition: .5s all ;
+
+}
+
+#file{
+    width: 84%;
+    height: 55px;
+    padding-top: 23px;
+    padding-left: 20px;
+}
+#file:hover , input[type=button]:hover , #Color:Hover{
+    cursor: pointer;
+    background-color: #4278f5;
+}

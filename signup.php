@@ -4,9 +4,12 @@ $showError = false;
 if($_SERVER["REQUEST_METHOD"]=="POST"){
  
  include 'component/dbconnect.php';
+
  $username = $_POST["username"];
  $password = $_POST["password"];
  $cpassword = $_POST["cpassword"];
+ $email = $_POST["email"];
+$patientGender = $_POST['patientGender'];
  //$exists = false;
  $existSql = "SELECT * FROM `users` WHERE username = '$username'";
  
@@ -19,7 +22,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
    //$exists = false;
  if(($password == $cpassword)){
         $hash = password_hash($password,PASSWORD_DEFAULT);
-        $sql = "INSERT INTO `users` ( `username`, `password`, `date`) VALUES ('$username', '$hash', current_timestamp())";
+        $sql = "INSERT INTO `users` ( `username`,`email`,`patientGender`, `password`, `date`) VALUES ('$username','$email','$patientGender','$hash', current_timestamp())";
         $result = mysqli_query($conn,$sql);
         if($result){
           $showAlert = true;
@@ -64,9 +67,23 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
         <form action="/medicare/signup.php" method="post">
   <div class="mb-3 col-md-6">
     <label for="username" class="form-label">User Name</label>
-    <input type="text" maxlength="15" class="form-control" id="username" name="username" aria-describedby="emailHelp">
+    <input type="text" maxlength="15" class="form-control" id="username" name="username">
     
   </div>
+  <div class="mb-3 col-md-6">
+    <label for="email" class="form-label">Email</label>
+    <input type="email" maxlength="80" class="form-control" id="email" name="email" aria-describedby="emailHelp">
+    
+  </div>
+                                        <br/><br/>
+                                        <label>Gender : </label>
+                                        <label class="radio-inline">
+                                            <input type="radio" name="patientGender" value="male" required/>Male
+                                        </label>
+                                        <label class="radio-inline" >
+                                            <input type="radio" name="patientGender" value="female" required/>Female
+                                        </label>
+                                        <br /><br/>
   <div class="mb-3 col-md-6">
     <label for="password" class="form-label">Password</label>
     <input type="password" maxlength = "11" class="form-control" id="password" name="password">
