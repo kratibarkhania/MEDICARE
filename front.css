@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Licorice&display=swap');
+
+
+
+body {
+    background-color: aquamarine;
+}
+
+h1{
+    font-family: 'Licorice', cursive;
+    font-size: 100px;
+    margin-left: 30%;
+    color: whitesmoke;
+}
+.animate__animated.animate__heartBeat {
+    --animate-duration: 8s;
+    animation-iteration-count: infinite;
+   
+  }
+  .disease{
+    background-color: transparent;
+    width: 470px;
+    height: 300px;
+    border: 10px solid #f1f1f1;
+    perspective: 1000px;
+    margin-left: 20px ;
+
+  }
+  .disease #Cancer{
+      font-family: 'Licorice', cursive ;
+      border-radius: 10px;
+      width: 470px;
+      height: 300px;
+      background-color: rgba(0, 0, 0, 0.301);
+      
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+      
+     
+
+  }
+  .disease:hover #Cancer{
+    transform: rotateY(180deg);
+
+  }
+  .front, .back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+  }
+
+
+  
+  
+  .disease #Cancer .title{
+      font-weight: 700;
+      font-size: 60px;
+      color: bisque;
+
+  }
+
+  .disease #Cancer .body{
+      font-weight: 300;
+      font-size: 40px;
+      color: bisque;
+  }
+  .disease #Cancer button {
+    
+    width: 200px;
+    height: 50px;
+    color: rgba(240, 248, 255, 0.295);
+    margin-left: 20px;
+    margin-top: 130px;
+    font-family:'Licorice', cursive ;
+      color: black;
+      font-size: 30px;
+      font-weight: 600;
+      
+  }
+  .front {
+    background-color: rgba(0, 0, 0, 0.082);
+    
+  }
+  .back{
+    background-color:rgba(0, 0, 0, 0.082) ;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+
+  .disease #Cancer{
+    font-family: 'Licorice', cursive ;
+    border-radius: 10px;
+    width: 470px;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.301);
+    
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    
+   
+
+}
+.disease:hover #Cancer{
+  transform: rotateY(180deg);
+
+}
+.front, .back{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; 
+  backface-visibility: hidden;
+}
+
+
+
+
+.disease #Cancer .title{
+    font-weight: 700;
+    font-size: 60px;
+    color: bisque;
+
+}
+
+.disease #Cancer .body{
+    font-weight: 300;
+    font-size: 40px;
+    color: bisque;
+}
+.disease #Cancer button {
+  
+  width: 200px;
+  height: 50px;
+  color: rgba(240, 248, 255, 0.295);
+  margin-left: 20px;
+  margin-top: 130px;
+  font-family:'Licorice', cursive ;
+    color: black;
+    font-size: 30px;
+    font-weight: 600;
+    
+}
+.front {
+  background-color: rgba(0, 0, 0, 0.315);
+  
+}
+.back{
+  background-color: rgba(0, 0, 0, 0.192) ;
+  color: white;
+  transform: rotateY(180deg);
+}
+  

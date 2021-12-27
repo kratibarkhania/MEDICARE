@@ -1,0 +1,32 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Licorice&display=swap');
+
+body{
+    background-color: aquamarine;
+}
+h1{
+    font-family: 'Licorice', cursive;
+    font-size: 100px;
+    color: whitesmoke;
+}
+p{
+    font-family: 'Licorice', cursive;
+    font-size: 30px;
+    color: whitesmoke;
+}
+h2{
+    font-family: 'Licorice', cursive;
+    font-size: 45px;
+    color: whitesmoke;
+}
+h3{
+    font-family: 'Licorice', cursive;
+    font-size: 30px;
+    color: whitesmoke;
+}
+ul{
+    font-family: 'Licorice', cursive;
+    font-size: 25px;
+    color: whitesmoke;
+
+}
