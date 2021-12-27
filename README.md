@@ -26,5 +26,7 @@ These section as their name suggests the important updates section help doctor t
 ![Infosite](https://user-images.githubusercontent.com/81457490/147485559-651f485c-f248-426a-bb8b-cf415fed32d4.png)
 ![Infosite](https://user-images.githubusercontent.com/81457490/147485566-8aa75030-35e8-4025-ade3-d3cd1de9516c.png)
 
+## Disease Infosite
+
 This section is still incomplete and needs a lot of work , we are planning to create a page where user can visit and can get the basic knowledge about different type of disease. This is just the basic idea of the original page we wanted to create.
 
